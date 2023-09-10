@@ -1,0 +1,29 @@
+h4{
+    text-align: center;
+}
+.country-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.visited-list{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.visited-flags{
+    height: 180px;
+    width: 250px;
+}
+
+@media screen and (max-width: 960px){
+    .country-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .country-container{
+        grid-template-columns: 1fr;
+    }
+}
